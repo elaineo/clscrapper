@@ -1,0 +1,14 @@
+sudo apt-get install tor
+
+tor
+/etc/init.d/tor start
+/etc/init.d/tor stop
+
+default socks 9050
+
+
+service_args = [
+    '--proxy=127.0.0.1:9050',
+    '--proxy-type=socks5',
+    ]
+browser = webdriver.PhantomJS('/usr/local/bin/phantomjs',service_args=service_args)

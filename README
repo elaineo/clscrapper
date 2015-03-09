@@ -1,0 +1,13 @@
+pip install beautifulsoup4
+pip install selenium
+
+
+run scrape.py
+change tab sett
+edit rideshare_xxx.py
+change tab back
+rename to rideshare_new.py
+run parse.py
+move cldata.js to /static/js/data/
+deploy
+http://www.gobarnacle.com/debug/createcl
